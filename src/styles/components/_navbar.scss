@@ -1,0 +1,31 @@
+#hero {
+    padding-top: 16px;
+    .navigation{
+        width: 20rem;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 1px 1px 30px rgba(0,0,0,0.25);
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 35px;
+        position: relative;
+        margin: 0 auto;
+
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            list-style: none;
+            flex: 1;
+            padding: 0;
+
+            li a{
+                text-decoration: none;
+                color: #000;
+                font-weight: 900;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

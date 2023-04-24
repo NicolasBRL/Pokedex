@@ -1,6 +1,18 @@
 import React from "react";
-function App() { return (
-<div className="App"> <h1>Salut les dev!</h1>
-</div> );
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Blog from "./pages/Blog";
+import Home from "./pages/Home";
+import "./styles/app.scss";
+
+const App = () => {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="*" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 export default App;
